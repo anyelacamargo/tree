@@ -40,3 +40,5 @@ legend("bottomright",   # location of legend
 #' Change British projection to WGS84 (lat lon)
 coord <- coordinates(spTransform(my_spdf, CRS("+proj=longlat +datum=WGS84")))
 colnames(coord) <- c('lon', 'lat')
+
+print(colnames)
